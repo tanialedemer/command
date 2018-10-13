@@ -4,9 +4,27 @@
              x:Class="Command.Views.CommandPage">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Command!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+            <Label 
+                Text="Comanda"/>
+                <StackLayout 
+                    Orientation="Horizontal">
+                <Button 
+                    Text="Botones de comanda"/>
+                </StackLayout>
+            <StackLayout 
+                    Orientation="Horizontal">
+                <Button 
+                    Text="Nro de mesas"/>
+            </StackLayout>
+            <TableView>
+                <TableRoot>
+                    <TableSection 
+                        Title="Lista de Pedidos">
+                        <EntryCell Text="Articulo">
+                        </EntryCell>
+                    </TableSection>
+                </TableRoot>
+            </TableView>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
