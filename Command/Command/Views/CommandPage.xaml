@@ -16,12 +16,23 @@
                 <Button 
                     Text="Nro de mesas"/>
             </StackLayout>
-            <TableView>
-                <TableRoot>
+            <TableView >
+                <TableRoot >
                     <TableSection 
                         Title="Lista de Pedidos">
-                        <EntryCell Text="Articulo">
-                        </EntryCell>
+                        <ViewCell>
+                            <StackLayout 
+                                Orientation="Horizontal"
+                                HorizontalOptions="CenterAndExpand">
+                                <Label Text="Articulo" FontSize="Small"></Label>
+                                <Label Text="Nombre"></Label>
+                                <Label Text="Comentario"></Label>
+                                <Label Text="Cantidad"></Label>
+                                <Label Text="Precio"></Label>
+                                <Label Text="Total"></Label>
+                                <Label Text="Anulado"></Label>
+                            </StackLayout>
+                        </ViewCell>
                     </TableSection>
                 </TableRoot>
             </TableView>
