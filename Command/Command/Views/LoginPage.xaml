@@ -3,10 +3,40 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Command.Views.LoginPage">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+        <StackLayout Padding="10,30,10,10" Spacing="10">
+            <Label Text="Pedidos"
+                   Font="30"
+                   VerticalOptions="Center" 
+                   HorizontalOptions="Center"/>
+            <Label Text="Ingreso al sistema"
+                   VerticalOptions="Center" 
+                   HorizontalOptions="Center"/>
+            <ActivityIndicator
+                   x:Name="waitActivityIndicator"
+                   VerticalOptions="Center" 
+                   HorizontalOptions="Center"/>
+            <Label Text="Usuario:"
+                   VerticalOptions="Center" 
+                   HorizontalOptions="Start"/>
+            <Entry x:Name="userEntry"
+                   Placeholder="Ingrese usuario"
+                   HorizontalOptions="FillAndExpand"
+                   VerticalOptions="Center" />
+            <Label Text="Contraseña:"
+                   VerticalOptions="Center" 
+                   HorizontalOptions="Start"/>
+            <Entry x:Name="passEntry"
+                   Placeholder="Ingrese contraseña"
+                   IsPassword="True"
+                   HorizontalOptions="FillAndExpand"
+                   VerticalOptions="Center" />
+            <Button
+                x:Name="enterButton"
+                Text="Ingresar"
+                BackgroundColor="Navy"
+                TextColor="White"
+                HorizontalOptions="FillAndExpand"
+                VerticalOptions="Center"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
