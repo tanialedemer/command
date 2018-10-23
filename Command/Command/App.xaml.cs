@@ -12,7 +12,7 @@ namespace Command
         {
             InitializeComponent();
 
-            this.MainPage = new CommandPage();
+            this.MainPage = new NavigationPage(new LoginPage());
         }
         #endregion
 
