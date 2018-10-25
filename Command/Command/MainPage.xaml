@@ -5,10 +5,21 @@
              x:Class="Command.MainPage">
 
     <StackLayout>
-        <!-- Place new controls here -->
-        <Label Text="Welcome to Xamarin.Forms!" 
-           HorizontalOptions="Center"
-           VerticalOptions="CenterAndExpand" />
+        <Button x:Name="btn1" Text="Consumir JSON" Clicked="btn1_click"/>
+
+        <ListView x:Name="lstUsuarios">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <StackLayout Orientation="Horizontal">
+                            <Label Text="{Binding codigo}"/>
+                            <Label Text="{Binding nombre}"/>
+                            <Label Text="{Binding correo}"/>
+                        </StackLayout>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
     </StackLayout>
 
 </ContentPage>

@@ -53,5 +53,6 @@ namespace Command.Views
 
             await Navigation.PushAsync(new CommandPage());
         }
+      
     }
 }
